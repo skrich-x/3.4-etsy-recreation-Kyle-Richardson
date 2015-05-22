@@ -1,2 +1,49 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+/* @mixin clearfix {
+    * zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+} */
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+html {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F5F5F2;
+  height: 100%; }
+  html::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 body {
-  background-color: red; }
+  overflow-y: scroll;
+  overflow-x: hidden; }
+
+.navBarBackground {
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 82px; }
+
+.centeredContainer {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 83.33333%; }
+  .centeredContainer:last-child {
+    margin-right: 0; }
