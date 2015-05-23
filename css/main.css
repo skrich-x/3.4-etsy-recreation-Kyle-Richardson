@@ -20,6 +20,9 @@ html {
   box-sizing: border-box;
   margin: 0; }
 
+ul {
+  list-style: none; }
+
 html {
   max-width: 1280px;
   margin-left: auto;
@@ -34,6 +37,13 @@ html {
 body {
   overflow-y: scroll;
   overflow-x: hidden; }
+
+nav h1 {
+  color: #F95822;
+  font-size: 1em; }
+
+h2 {
+  color: #555555; }
 
 .navBarBackground {
   width: 100%;

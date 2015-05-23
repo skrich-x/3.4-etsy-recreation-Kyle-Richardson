@@ -22,6 +22,9 @@ $gutter:0em;
   margin: 0;
 }
 
+ul{
+  list-style: none;
+}
 
 html {
   @include outer-container(1280px);
@@ -33,7 +36,15 @@ html {
 body {
   overflow-y: scroll;
   overflow-x: hidden;
+}
 
+nav h1{
+  color:#F95822;
+  font-size: 1em;
+}
+
+h2{
+  color:#555555;
 }
 
 .navBarBackground{

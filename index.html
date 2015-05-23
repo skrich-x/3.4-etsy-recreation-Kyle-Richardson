@@ -3,25 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>Etsy Recreation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <nav class = "navBarBackground"></nav>
-  <section class = "centeredContainer">
-  <nav class = "navigationBar">
-    <h1>Etsy</h1>
-    <div class="searchBar"></div>
-    <button class="browse"></button>
+    <nav class = "navBarBackground">
+      <section class = "centeredContainer">
+        <nav class = "navBar">
+          <h1>Etsy</h1>
+          <div class="searchBar"></div>
+          <button class="browse">Search</button>
+          <ul>
+            <li><i class="fa fa-home"></i></li>
+            <li><i class="fa fa-heart"></i></li>
+            <li><i class="fa fa-user"></i></li>
+            <li><i class="fa fa-shopping-cart"></i></li>
+          </ul>
+        </nav>
+      </section>
+    </nav>
+  <h2>Show Results for:</h2>
+  <sidebar class = "resultCategories">
+    <h2>All Catagories</h2>
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li><a href="#">Clothin</a></li>
+      <li><a href="#">Art & Collectibles</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Home & Living</a></li>
+      <li><a href="#">Bags & Purses</a></li>
+      <li><a href="#">Jewelry</a></li>
+      <li><a href="#">Shoes</a></li>
+      <li><a href="#">Craft Supplies & Tools</a></li>
+      <li><a href="#">Paper & Party Supplies</a></li>
+      <li><a href="#">Electronics & Accessories</a></li>
+      <li><a href="#">Toys & Games</a></li>
+      <li><a href="#">Books,Movies & Music</a></li>
     </ul>
+  </sidebar>
 
+  <script id="character-template" type="text/x-handlebars-template">
+    <li>
+      <h1>{{name}}</h1>
+      <img src="{{thumbnail.path}}">
+    </li>
+  </script>
 
-  </nav>
-  </section>
   <script src="bower_components/handlebars/handlebars.js"></script>
   <script src="main.js"></script>
 </body>

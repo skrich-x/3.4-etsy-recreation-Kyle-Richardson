@@ -1,4 +1,4 @@
-alert("hello");
+
 
 
 function fetchJSONP(url, callback) {
@@ -15,5 +15,13 @@ function fetchJSONP(url, callback) {
     document.body.appendChild(script);
 }
 
-var url = "https://api.etsy.com/v2/listings/active.js?api_key=cdwxq4soa7q4zuavbtynj8wx&keywords=tacos&includes=Images,Shop";
-fetchJSONP(url, logResults);
+
+function app(response) {
+    var items = response.data.results;
+    console.log(items);
+    displayItemsNames(items);
+  }
+
+
+var url = "https://api.etsy.com/v2/listings/active.js?api_key=19vjkb65j5uuobqlp0889tzd&keywords=caferacer&includes=Images,Shop";
+fetchJSONP(url, console.log(results));
