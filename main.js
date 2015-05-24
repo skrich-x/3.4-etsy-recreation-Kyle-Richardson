@@ -1,3 +1,5 @@
+(function(){
+  'use strict';
 
 
 
@@ -15,13 +17,16 @@ function fetchJSONP(url, callback) {
     document.body.appendChild(script);
 }
 
+function logData(data) {
+console.log(data);
+}
 
-function app(response) {
-    var items = response.data.results;
-    console.log(items);
-    displayItemsNames(items);
-  }
-
+function logData(response) {
+ console.log(response.results.title);
+ }
 
 var url = "https://api.etsy.com/v2/listings/active.js?api_key=19vjkb65j5uuobqlp0889tzd&keywords=caferacer&includes=Images,Shop";
-fetchJSONP(url, console.log(results));
+fetchJSONP(url, logData);
+
+
+})();
