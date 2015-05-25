@@ -11,19 +11,23 @@
       <section class = "centeredContainer">
         <nav class = "navBar">
           <h1>Etsy</h1>
-          <div class="searchBar"></div>
+
+          <div class="searchBar">
+            <input type = "text" placeholder "Search for items or shops">
+          </div>
           <button class="browse">Search</button>
-          <ul class = "socialButtons">
-            <li><i class="fa fa-home"></i></li>
-            <li><i class="fa fa-heart"></i></li>
-            <li><i class="fa fa-user"></i></li>
-            <li><i class="fa fa-shopping-cart"></i></li>
-          </ul>
+          <div class = "socialButtons">
+            <i class="fa fa-home"></i>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-user"></i>
+            <i class="fa fa-shopping-cart"></i>
+          </div>
         </nav>
       </section>
     </nav>
+    <hr>
   <h2>Show Results for:</h2>
-  <container class = "resultsRefineContainer">
+  <!--<section class = "resultsRefineContainer">
     <sidebar class = "resultCategories">
       <h2>All Catagories</h2>
       <ul>
@@ -50,33 +54,19 @@
       </div>
 
     </sidebar>
-</container>
+</section>-->
 
-  <section class = "productGrid">
-      <div class = "productContainer">
-        <img src="http://placehold.it/225x175">
-      </div>
+  <ul class = "product-grid">
 
-      <div class = "productContainer">
-        <img src="http://placehold.it/225x175">
-      </div>
-
-      <div class = "productContainer">
-        <img src="http://placehold.it/225x175">
-      </div>
-
-      <div class = "productContainer">
-        <img src="http://placehold.it/225x175">
-      </div>
-  </section>
+  </ul>
 
 
-  <!--<script id="character-template" type="text/x-handlebars-template">
+  <script id="product-template" type="text/x-handlebars-template">
     <li>
-      <h1>{{name}}</h1>
-      <img src="{{thumbnail.path}}">
+      <h1>{{{title}}}</h1>
+      <img src ="{{Images.0.url_570xN}}">
     </li>
-  </script>-->
+  </script>
 
   <script src="bower_components/handlebars/handlebars.js"></script>
   <script src="main.js"></script>

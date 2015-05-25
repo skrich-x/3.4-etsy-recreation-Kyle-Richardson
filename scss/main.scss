@@ -23,7 +23,7 @@ $gutter:0em;
 }
 
 ul{
-  list-style: none;
+  list-style-type: none;
 }
 
 html {
@@ -47,7 +47,12 @@ nav h1{
   font-size: 1em;
 }
 
-.socialButtons li{
+.navBar{
+  text-align:center;
+}
+
+.socialButtons i{
+  float:right;
   display:inline-block;
 }
 
@@ -68,9 +73,7 @@ h2{
 
 /* .resultsRefineContainer{
   height: 1082px;
-
-}
- */
+} */
 .resultCategories{
   @include span-columns(3);
   background-color: #FFFFFF;
@@ -86,7 +89,6 @@ h2{
 
 .refineSearch{
   @include span-columns(3);
-
   height: 680px;
   background-color: #FFFFFF;
   border: 1px solid #E1E3DF;
@@ -95,12 +97,15 @@ h2{
 //Main Product Grid//
 .productGrid{
   @include span-columns(9);
-padding-left:18px;
+  height:100%;
+ padding-left:18px;
+ display:inline-block;
 }
 
 .productContainers{
   @include span-columns(3);
   height: 220px;
+  background-color:#FFFFFF;
   border: 1px solid #E1E3DF;
   border-radius: 3px;
 }

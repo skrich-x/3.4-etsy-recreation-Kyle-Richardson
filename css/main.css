@@ -21,7 +21,7 @@ html {
   margin: 0; }
 
 ul {
-  list-style: none; }
+  list-style-type: none; }
 
 html {
   max-width: 980px;
@@ -49,7 +49,11 @@ nav h1 {
   color: #F95822;
   font-size: 1em; }
 
-.socialButtons li {
+.navBar {
+  text-align: center; }
+
+.socialButtons i {
+  float: right;
   display: inline-block; }
 
 .navBarBackground {
@@ -63,9 +67,7 @@ h2 {
 
 /* .resultsRefineContainer{
   height: 1082px;
-
-}
- */
+} */
 .resultCategories {
   float: left;
   display: block;
@@ -98,7 +100,9 @@ h2 {
   display: block;
   margin-right: 0%;
   width: 75%;
-  padding-left: 18px; }
+  height: 100%;
+  padding-left: 18px;
+  display: inline-block; }
   .productGrid:last-child {
     margin-right: 0; }
 
@@ -108,6 +112,7 @@ h2 {
   margin-right: 0%;
   width: 25%;
   height: 220px;
+  background-color: #FFFFFF;
   border: 1px solid #E1E3DF;
   border-radius: 3px; }
   .productContainers:last-child {
