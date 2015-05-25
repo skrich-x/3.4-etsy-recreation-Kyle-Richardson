@@ -13,7 +13,7 @@
           <h1>Etsy</h1>
           <div class="searchBar"></div>
           <button class="browse">Search</button>
-          <ul>
+          <ul class = "socialButtons">
             <li><i class="fa fa-home"></i></li>
             <li><i class="fa fa-heart"></i></li>
             <li><i class="fa fa-user"></i></li>
@@ -23,30 +23,60 @@
       </section>
     </nav>
   <h2>Show Results for:</h2>
-  <sidebar class = "resultCategories">
-    <h2>All Catagories</h2>
-    <ul>
-      <li><a href="#">Clothin</a></li>
-      <li><a href="#">Art & Collectibles</a></li>
-      <li><a href="#">Accessories</a></li>
-      <li><a href="#">Home & Living</a></li>
-      <li><a href="#">Bags & Purses</a></li>
-      <li><a href="#">Jewelry</a></li>
-      <li><a href="#">Shoes</a></li>
-      <li><a href="#">Craft Supplies & Tools</a></li>
-      <li><a href="#">Paper & Party Supplies</a></li>
-      <li><a href="#">Electronics & Accessories</a></li>
-      <li><a href="#">Toys & Games</a></li>
-      <li><a href="#">Books,Movies & Music</a></li>
-    </ul>
-  </sidebar>
+  <container class = "resultsRefineContainer">
+    <sidebar class = "resultCategories">
+      <h2>All Catagories</h2>
+      <ul>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Art & Collectibles</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Home & Living</a></li>
+        <li><a href="#">Bags & Purses</a></li>
+        <li><a href="#">Jewelry</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Craft Supplies & Tools</a></li>
+        <li><a href="#">Paper & Party Supplies</a></li>
+        <li><a href="#">Electronics & Accessories</a></li>
+        <li><a href="#">Toys & Games</a></li>
+        <li><a href="#">Books,Movies & Music</a></li>
+      </ul>
+    </sidebar>
+    <sidebar class = "refineSearch">
+      <h2>Item Types</h2>
+      <div class = "itemTypeRadioButtons">
+        <input type="radio" name="item_type" value="" class="radio" data-form-type="url" checked="checked">
+        <input type="radio" name="item_type" value="" class="radio" data-form-type="url" checked="checked">
+        <input type="radio" name="item_type" value="" class="radio" data-form-type="url" checked="checked">
+      </div>
 
-  <script id="character-template" type="text/x-handlebars-template">
+    </sidebar>
+</container>
+
+  <section class = "productGrid">
+      <div class = "productContainer">
+        <img src="http://placehold.it/225x175">
+      </div>
+
+      <div class = "productContainer">
+        <img src="http://placehold.it/225x175">
+      </div>
+
+      <div class = "productContainer">
+        <img src="http://placehold.it/225x175">
+      </div>
+
+      <div class = "productContainer">
+        <img src="http://placehold.it/225x175">
+      </div>
+  </section>
+
+
+  <!--<script id="character-template" type="text/x-handlebars-template">
     <li>
       <h1>{{name}}</h1>
       <img src="{{thumbnail.path}}">
     </li>
-  </script>
+  </script>-->
 
   <script src="bower_components/handlebars/handlebars.js"></script>
   <script src="main.js"></script>
