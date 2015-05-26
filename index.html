@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Etsy Recreation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class = "navBarBackground">
+      <section class = "centeredContainer">
+        <nav class = "navBar">
+          <h1>Etsy</h1>
+
+          <div class="searchBar">
+            <input type = "text" placeholder "Search for items or shops">
+          </div>
+          <button class="browse">Search</button>
+          <div class = "socialButtons">
+            <i class="fa fa-home"></i>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-user"></i>
+            <i class="fa fa-shopping-cart"></i>
+          </div>
+        </nav>
+      </section>
+    </nav>
+
+  <h2>Show Results for:</h2>
+  <section class = "resultsRefineContainer">
+    <div class = "resultCategories">
+      <h2>All Catagories</h2>
+      <ul>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Art & Collectibles</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Home & Living</a></li>
+        <li><a href="#">Bags & Purses</a></li>
+        <li><a href="#">Jewelry</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Craft Supplies & Tools</a></li>
+        <li><a href="#">Paper & Party Supplies</a></li>
+        <li><a href="#">Electronics & Accessories</a></li>
+        <li><a href="#">Toys & Games</a></li>
+        <li><a href="#">Books,Movies & Music</a></li>
+      </ul>
+    </div>
+    <h2>Refine your search</h2>
+    <div class = "refineSearch">
+      <h2>Item Types</h2>
+      <ul class = "itemTypeRadioButtons">
+        <li>
+          <input type="radio" name="item_type" value="" class="radio" data-form-type="url" checked="checked">
+          <a href="#">All Items</a>
+        </li>
+        <li>
+          <input type="radio" name="item_type" value="" class="radio" data-form-type="url" checked="checked">
+          <a href="#">Handmade</a>
+        </li>
+        <li>
+          <input type="radio" name="item_type" value="" class="radio" data-form-type="url" checked="checked">
+          <a href="#">Vintage</a>
+        </li>
+      </ul>
+    </div>
+</section>
+
+<section class = "mainContent">
+  <ul class = "product-grid">
+
+  </ul>
+</section>
+
+  <script id="product-template" type="text/x-handlebars-template">
+    <li>
+
+      <img src ="{{Images.0.url_570xN}}">
+      <h2>{{{title}}}</h2>
+      <h4>{{currency_code}}</h4>
+      <h4>{{price}}<h4>
+
+    </li>
+  </script>
+
+  <script src="bower_components/handlebars/handlebars.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

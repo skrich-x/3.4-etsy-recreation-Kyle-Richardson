@@ -1,0 +1,184 @@
+
+
+@import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+$gutter:0em;
+
+@import '../bower_components/neat/app/assets/stylesheets/neat';
+
+
+/* @mixin clearfix {
+    * zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+} */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+html {
+  @include outer-container(980px);
+  background-color:#F5F5F2;
+
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+hr{
+
+  border:0;
+  color:#D7D7D3;
+}
+.centeredContainer{
+  @include span-columns(12);
+}
+
+// header/nav bar//
+nav h1{
+  color:#F95822;
+  font-size: 1em;
+}
+
+.navBar{
+  text-align:center;
+}
+
+.socialButtons i{
+  float:right;
+  display:inline-block;
+}
+
+
+
+.navBarBackground{
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 82px;
+  border-bottom: 1px solid #E1E3DF;
+}
+
+//side bar results//
+
+h2{
+  color:#555555;
+  font-size: 1em;
+}
+
+.resultsRefineContainer{
+  @include span-columns (3 of 12);
+  height: 1082px;
+}
+
+.resultsRefineContainer ul{
+  padding:12px;
+  margin: 0 0 12px;
+}
+.resultCategories{
+  @include span-columns(3 of 3);
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3DF;
+  border-radius: 3px;
+  padding: 12px;
+  margin-bottom:53px;
+}
+
+.resultCategories a{
+  color:#0093B2;
+  text-decoration: none;
+}
+
+.refineSearch a{
+  text-decoration: none;
+  color:#0093B2;
+}
+
+.refineSearch{
+  @include span-columns(3 of 3);
+  height: 680px;
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3DF;
+  border-radius: 3px;
+  padding:12px;
+}
+
+.itemTypeRadioButtons{
+  border-bottom: 1px solid #E1E3DF;
+}
+.mainContent{
+  @include span-columns(9 of 12);
+}
+
+
+.product-grid li{
+  @include span-columns(3 of 9);
+  @include omega(3n);
+  height:220px;
+  background-color: #FFFFFF;
+  border: 1px solid #E1E3DF;
+  border-radius: 3px;
+/*   margin:9px; */
+}
+
+.product-grid h2{
+  font-size:12px;
+  color:#555555;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 6px 6px 3px 6px;
+
+}
+
+.product-grid h4{
+  color:#70C056;
+  font-size:16px;
+  display:inline-block;
+  float:right;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.product-grid img{
+  width: 100%;
+  height: 172px;
+
+
+}
+
+
+//Main Product Grid//
+//NEED TO RESTYLE FOR HANDLEBARS//
+/* .productGrid{
+  @include span-columns(9);
+  height:100%;
+ padding-left:18px;
+ display:inline-block;
+}
+
+.productGrid li{
+  @include span-columns(3);
+  height: 175px;
+}
+.productContainers{
+  @include span-columns(3);
+  height: 220px;
+  background-color:#FFFFFF;
+  border: 1px solid #E1E3DF;
+  border-radius: 3px;
+}
+ */
