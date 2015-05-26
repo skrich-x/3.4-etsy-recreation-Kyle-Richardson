@@ -27,8 +27,8 @@
     </nav>
     <hr>
   <h2>Show Results for:</h2>
-  <!--<section class = "resultsRefineContainer">
-    <sidebar class = "resultCategories">
+  <section class = "resultsRefineContainer">
+    <div class = "resultCategories">
       <h2>All Catagories</h2>
       <ul>
         <li><a href="#">Clothing</a></li>
@@ -44,8 +44,8 @@
         <li><a href="#">Toys & Games</a></li>
         <li><a href="#">Books,Movies & Music</a></li>
       </ul>
-    </sidebar>
-    <sidebar class = "refineSearch">
+    </div>
+    <div class = "refineSearch">
       <h2>Item Types</h2>
       <div class = "itemTypeRadioButtons">
         <input type="radio" name="item_type" value="" class="radio" data-form-type="url" checked="checked">
@@ -53,18 +53,22 @@
         <input type="radio" name="item_type" value="" class="radio" data-form-type="url" checked="checked">
       </div>
 
-    </sidebar>
-</section>-->
-
+    </div>
+</section>
+<section class = "mainContent">
   <ul class = "product-grid">
 
   </ul>
-
+</section>
 
   <script id="product-template" type="text/x-handlebars-template">
     <li>
-      <h1>{{{title}}}</h1>
+
       <img src ="{{Images.0.url_570xN}}">
+      <h2>{{{title}}}</h2>
+      <h4>{{currency_code}}</h4>
+      <h4>{{price}}<h4>
+
     </li>
   </script>
 
