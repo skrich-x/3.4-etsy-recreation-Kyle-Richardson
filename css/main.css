@@ -38,6 +38,10 @@ body {
   overflow-x: hidden;
   font-family: Arial, sans-serif; }
 
+hr {
+  border: 0;
+  color: #D7D7D3; }
+
 .centeredContainer {
   float: left;
   display: block;
@@ -60,7 +64,8 @@ nav h1 {
 .navBarBackground {
   width: 100%;
   background-color: #FFFFFF;
-  height: 82px; }
+  height: 82px;
+  border-bottom: 1px solid #E1E3DF; }
 
 h2 {
   color: #555555;
@@ -71,19 +76,24 @@ h2 {
   display: block;
   margin-right: 0%;
   width: 25%;
-  height: 1082px;
-  display: inline-block; }
+  height: 1082px; }
   .resultsRefineContainer:last-child {
     margin-right: 0; }
+
+.resultsRefineContainer ul {
+  padding: 12px;
+  margin: 0 0 12px; }
 
 .resultCategories {
   float: left;
   display: block;
   margin-right: 0%;
-  width: 25%;
+  width: 100%;
   background-color: #FFFFFF;
   border: 1px solid #E1E3DF;
-  border-radius: 3px; }
+  border-radius: 3px;
+  padding: 12px;
+  margin-bottom: 53px; }
   .resultCategories:last-child {
     margin-right: 0; }
 
@@ -91,17 +101,25 @@ h2 {
   color: #0093B2;
   text-decoration: none; }
 
+.refineSearch a {
+  text-decoration: none;
+  color: #0093B2; }
+
 .refineSearch {
   float: left;
   display: block;
   margin-right: 0%;
-  width: 25%;
+  width: 100%;
   height: 680px;
   background-color: #FFFFFF;
   border: 1px solid #E1E3DF;
-  border-radius: 3px; }
+  border-radius: 3px;
+  padding: 12px; }
   .refineSearch:last-child {
     margin-right: 0; }
+
+.itemTypeRadioButtons {
+  border-bottom: 1px solid #E1E3DF; }
 
 .mainContent {
   float: left;

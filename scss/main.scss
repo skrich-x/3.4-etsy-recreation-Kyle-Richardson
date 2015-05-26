@@ -39,6 +39,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+hr{
+
+  border:0;
+  color:#D7D7D3;
+}
 .centeredContainer{
   @include span-columns(12);
 }
@@ -64,6 +69,7 @@ nav h1{
   width: 100%;
   background-color: #FFFFFF;
   height: 82px;
+  border-bottom: 1px solid #E1E3DF;
 }
 
 //side bar results//
@@ -76,13 +82,19 @@ h2{
 .resultsRefineContainer{
   @include span-columns (3 of 12);
   height: 1082px;
-  display: inline-block;
+}
+
+.resultsRefineContainer ul{
+  padding:12px;
+  margin: 0 0 12px;
 }
 .resultCategories{
-  @include span-columns(3);
+  @include span-columns(3 of 3);
   background-color: #FFFFFF;
   border: 1px solid #E1E3DF;
   border-radius: 3px;
+  padding: 12px;
+  margin-bottom:53px;
 }
 
 .resultCategories a{
@@ -90,16 +102,23 @@ h2{
   text-decoration: none;
 }
 
+.refineSearch a{
+  text-decoration: none;
+  color:#0093B2;
+}
 
 .refineSearch{
-  @include span-columns(3 of 12);
+  @include span-columns(3 of 3);
   height: 680px;
   background-color: #FFFFFF;
   border: 1px solid #E1E3DF;
   border-radius: 3px;
+  padding:12px;
 }
 
-
+.itemTypeRadioButtons{
+  border-bottom: 1px solid #E1E3DF;
+}
 .mainContent{
   @include span-columns(9 of 12);
 }
